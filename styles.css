@@ -1,0 +1,111 @@
+/* ========== TAMBAHAN UNTUK SKILLS & PROJECTS (Portofolio) ========== */
+
+/* Skill badges */
+.skill-badge {
+  display: inline-block;
+  background: #dc3545 !important;
+  color: white !important;
+  padding: 0.4rem 1rem;
+  border-radius: 40px;
+  margin: 0.3rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.skill-badge:hover {
+  transform: scale(1.05);
+  background: #8b0000 !important;
+  box-shadow: 0 4px 12px rgba(220, 53, 69, 0.4);
+}
+
+/* Project cards (di section projects) */
+.project-card {
+  border: 2px solid #dc3545 !important;
+  border-radius: 20px !important;
+  overflow: hidden;
+  transition: all 0.3s ease !important;
+  background: white;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: #ff6666 !important;
+  box-shadow: 0 15px 25px rgba(220, 53, 69, 0.25);
+}
+
+.project-card .card-img-top {
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 2px solid #dc3545;
+}
+
+.project-card .card-body {
+  background: white;
+}
+
+.project-card .card-title {
+  font-family: 'Lobster', cursive;
+  color: #800000;
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+}
+
+.project-card .card-text {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #444;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.project-card .btn-outline-secondary {
+  border-color: #dc3545;
+  color: #dc3545;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 0.3rem 1rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-card .btn-outline-secondary:hover {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: white;
+}
+
+/* Section bg-light (untuk skills) */
+.bg-light {
+  background: #fef2f2 !important; /* merah muda sangat soft, masih nyambung tema */
+}
+
+/* Judul section tambahan */
+section h2 i, 
+section h2 .fa, 
+section h2 .fas {
+  margin-right: 8px;
+  color: #dc3545;
+}
+
+/* Teks kecil di bawah judul */
+.text-muted {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #6c757d;
+  font-size: 0.95rem;
+}
+
+/* Responsif untuk project cards */
+@media (max-width: 768px) {
+  .project-card .card-title {
+    font-size: 1.1rem;
+  }
+  .skill-badge {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.7rem;
+  }
+}
