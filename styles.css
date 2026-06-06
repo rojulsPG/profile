@@ -109,3 +109,23 @@ section h2 .fas {
     padding: 0.3rem 0.7rem;
   }
 }
+
+/* Perbaikan ukuran foto profil di mobile */
+@media (max-width: 768px) {
+  .jumbotron .container > img#ngelujancok.rounded-circle {
+    width: 100px !important;      /* dari 140px -> 100px */
+    height: 100px !important;     /* dari 140px -> 100px */
+    margin-bottom: 8px !important;
+    border-width: 3px !important;
+  }
+  
+  /* Opsional: perbaiki tinggi jumbotron biar proporsional */
+  .jumbotron {
+    min-height: 450px !important;
+    padding-top: 60px !important;
+  }
+  
+  .jumbotron h1.display-5 {
+    font-size: 1.6rem !important;
+  }
+}
